@@ -1,0 +1,52 @@
+.noactive {
+  display: none;
+}
+
+.hangman {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hangman_word {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hangman_word .hangman_letters {
+  width: 90px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.hangman_keyboard {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 500px;
+  height: 250px;
+  border: 1px solid black;
+}
+
+.hangman_keyboard .ltr {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.hangman_keyboard .ltr-used {
+  color: grey;
+}
+/*# sourceMappingURL=style.css.map */
