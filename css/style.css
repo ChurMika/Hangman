@@ -37,7 +37,6 @@
       flex-wrap: wrap;
   width: 500px;
   height: 250px;
-  border: 1px solid black;
 }
 
 .hangman_keyboard .ltr {

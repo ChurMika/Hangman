@@ -9,7 +9,8 @@ const ALPHABET = ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ж', 'З', 'И', 'Й', '�
 
 let word = WORDS[Math.floor(Math.random()*WORDS.length)]
 
-let counter = new Set(word).size + 3
+let wordSize = word.length
+let counter = new Set(word).size + 7
 COUNT.innerHTML = `У Вас осталось ${counter} попыток` 
 
 for (let i = 0; i < word.length; i++) {
@@ -42,6 +43,7 @@ LTR.forEach(function(item) {
         for (let k = 0; k < word.length; k++) {
             if (el.target.innerHTML === word[k].toUpperCase() && counter > 0) {
                 LETTER[k].classList.remove('noactive')
+                wordSize--
             } 
         }
 
@@ -51,6 +53,12 @@ LTR.forEach(function(item) {
         if (counter === 0) {
             HEADER.innerHTML = `ТЫ ПОВЕШЕН!`
             COUNT.innerHTML = `Было загадано слово <span>${word.toLocaleUpperCase()}</span>`
+            KEYBOARD.remove()
+        }
+
+        if (wordSize === 0) {
+            HEADER.innerHTML = `Поздравляю, ты избежал виселицы!`
+            COUNT.remove()
             KEYBOARD.remove()
         }
     })
