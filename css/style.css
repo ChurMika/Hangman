@@ -12,6 +12,10 @@
   text-align: center;
 }
 
+.hangman_header {
+  margin: 25px 0;
+}
+
 .hangman_word {
   margin: 30px 0;
   display: -webkit-box;
