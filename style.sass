@@ -1,3 +1,7 @@
+*
+    margin: 0
+    padding: 0
+
 .noactive
     display: none
 
@@ -10,20 +14,32 @@
         justify-content: space-around
         align-items: center
         .hangman_letters
-            width: 90px
-            height: 150px
-            border: 1px solid black
+            width: 75px
+            height: 100px
+            border: 1px solid rgba(34, 60, 80, 0.25)
+            border-radius: 15px
+            box-shadow: 10px 10px 5px 5px rgba(34, 60, 80, 0.25)
+            .hangman_letter
+                margin: 0 auto
+                margin-top: 15px
+                font-size: 50px
+    &_counter
+        margin: 25px 0
     &_keyboard
         margin: 0 auto
         display: flex
         justify-content: space-between
         flex-wrap: wrap
-        width: 500px
+        width: 600px
         height: 250px
         .ltr
+            margin: 0 10px
             padding-top: 10px
-            width: 40px
-            height: 40px
-            border: 1px solid black
+            width: 50px
+            height: 50px
+            box-sizing: border-box
+            border: 1px solid rgba(53, 67, 79, 0.25)
+            box-shadow: 2px 2px 5px 0px rgba(53, 67, 79, 0.25)
+            font-size: 25px
         .ltr-used
-            color: grey
+            color: white

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .noactive {
   display: none;
 }
@@ -20,9 +25,22 @@
 }
 
 .hangman_word .hangman_letters {
-  width: 90px;
-  height: 150px;
-  border: 1px solid black;
+  width: 75px;
+  height: 100px;
+  border: 1px solid rgba(34, 60, 80, 0.25);
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 5px 5px rgba(34, 60, 80, 0.25);
+          box-shadow: 10px 10px 5px 5px rgba(34, 60, 80, 0.25);
+}
+
+.hangman_word .hangman_letters .hangman_letter {
+  margin: 0 auto;
+  margin-top: 15px;
+  font-size: 50px;
+}
+
+.hangman_counter {
+  margin: 25px 0;
 }
 
 .hangman_keyboard {
@@ -35,17 +53,24 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 500px;
+  width: 600px;
   height: 250px;
 }
 
 .hangman_keyboard .ltr {
-  width: 40px;
-  height: 40px;
-  border: 1px solid black;
+  margin: 0 10px;
+  padding-top: 10px;
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid rgba(53, 67, 79, 0.25);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(53, 67, 79, 0.25);
+          box-shadow: 2px 2px 5px 0px rgba(53, 67, 79, 0.25);
+  font-size: 25px;
 }
 
 .hangman_keyboard .ltr-used {
-  color: grey;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
